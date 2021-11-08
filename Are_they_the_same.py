@@ -2,6 +2,7 @@ def comp(array1, array2):
     
     score = 0
     
+    #some of the arrays are None type, return false in such case
     if(array1 is None):
         return False
     if(array2 is None):
@@ -11,8 +12,8 @@ def comp(array1, array2):
         
     if(len(array1) == len(array2)):    
         
-        array1 = set(array1)
-        array2 = set(array2)
+        array1 = set(array1) #get rid of duplicates
+        array2 = set(array2) #get rid of duplicates
     
     
         for x in array1:
